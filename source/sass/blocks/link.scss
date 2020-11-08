@@ -1,0 +1,22 @@
+.link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    &__image-block {
+        background: linear-gradient(135deg, #0AA39D 0%, #2FDBAF 100%);
+        border-radius: 4px;
+        min-height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 32px;
+    }
+}

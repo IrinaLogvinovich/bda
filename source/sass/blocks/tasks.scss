@@ -1,0 +1,25 @@
+.tasks {
+    padding-bottom: 140px;
+    
+    &__list {
+        @include list-reset;
+        display: flex;
+        flex-direction: column;
+        max-height: 220px;
+        flex-wrap: wrap;
+
+        & li {
+            max-width: 588px;
+            margin-bottom: 19px;
+            padding-right: 10px;
+
+            &::before {
+                content: "•\00A0"
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+}

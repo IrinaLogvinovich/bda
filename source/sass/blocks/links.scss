@@ -1,0 +1,13 @@
+.links {
+    padding-bottom: 144px;
+    & ul {
+        @include list-reset;
+        display: flex;
+        justify-content: space-between;
+
+        & li {
+            width: 100%;
+            max-width: 224px;
+        }
+    }
+}

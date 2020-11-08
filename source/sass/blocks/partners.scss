@@ -1,0 +1,40 @@
+.partners {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__text-block {
+        max-width: 588px;
+
+        & p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        align-self: flex-start;
+        list-style: none;
+        margin: 0;
+        padding: 33px 39px 33px 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: $partners-list;
+        min-width: 588px;
+
+        & li {
+            display: flex;
+            line-height: 0;
+            height: 130px;
+
+            & img {
+                mix-blend-mode: darken;
+            }
+        }
+    }
+}

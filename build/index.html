@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <include src="source/components/head.html"></include>
+  <head>
+  <meta charset="UTF-8">
+  <title>Портал инклюзивное образование</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
   <body>
-    <include src="source/components/header.html"></include>
+    <header class="header">
+ 
+</header>
+
     <main class="container">
       <section class="about">
         <div class="about__top-row">
@@ -17,7 +28,7 @@
             <a href="#" class="about__video">
               <span class="about__video-title">Видео презентация – портала</span>
               <img class="about__play-icon" src="img/sprite/play.svg" alt="кнопка play">
-              <img  lass="about__video-cover" src="img/video-image.jpg" alt="постер видео">
+              <img lass="about__video-cover" src="img/video-image.jpg" alt="постер видео">
             </a>
 
             <a href="#" class="about__video">
@@ -90,11 +101,11 @@
           <div class="feedback__top">
             <div class="feedback__left-side">
               <label for="name-first">Имя</label>
-              <input type="text" name="name" required id="name-first">
+              <input type="text" name="name" required="" id="name-first">
               <label for="email-first">Ваша почта:</label>
-              <input type="email" name="email" required id="email-first">
+              <input type="email" name="email" required="" id="email-first">
               <label for="phone-first">Телефон: </label>
-              <input type="text" name="phone" required id="phone-first">
+              <input type="text" name="phone" required="" id="phone-first">
             </div>
             <div class="feedback__right-side">
               <label for="message-first">Сообщение:</label>
@@ -103,7 +114,7 @@
           </div>
           <div class="feedback__bottom">
             <button class="button">Отправить</button>
-            <input type="checkbox" name="agree" checked id="agree-first" class="visually-hidden">
+            <input type="checkbox" name="agree" checked="" id="agree-first" class="visually-hidden">
             <label for="agree-first">согласие на обработку персональных данных</label>
           </div>
         </form>
@@ -212,7 +223,13 @@
         </ul>
       </section>
     </main>
-    <include src="source/components/footer.html"></include>
-    <include src="source/components/scripts.html"></include>
+    <footer class="footer">
+ 
+</footer>
+
+    <script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+
   </body>
 </html>

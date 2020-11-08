@@ -1,0 +1,141 @@
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 155px;
+
+    &__text-block {
+        width: 100%;
+        max-width: 466px;
+        margin-right: 20px;
+
+        & > p {
+            max-width: 380px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+        * {
+            outline: none;
+        }
+
+        & label {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            color: $label;
+            margin-bottom: 8px;
+        }
+
+        & input {
+            background-color: $partners-list;
+            border: 1px solid $partners-list;
+            border-radius: 4px;
+            min-height: 60px;
+            margin-bottom: 18px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 300;
+            padding: 0 20px;
+        }
+
+        & textarea {
+            width: 100%;
+            min-height: 264px;
+            resize: none;
+            background-color: $partners-list;
+            border: 1px solid $partners-list;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 300;
+            padding: 20px;
+        }
+
+        & input[type=checkbox] + label {
+            padding-left: 33px;
+            position: relative;
+            margin-top: 17px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border: 1.5px solid $checkbox;
+                top: -2px;
+                left: 0;
+                border-radius: 4px;
+            }
+        }
+
+        & input[type=checkbox]:checked + label {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                background: url('../img/sprite/check.svg') no-repeat center center;
+                top: -2px;
+                left: 0;
+            }
+        }
+    }
+
+    &__left-side {
+        width: 48.5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-side {
+        width: 48.5%;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    &__mail {
+        margin-top: 55px;
+
+        & a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+
+    &__volunteers {
+        margin-top: 50px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+        margin-top: 18px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+
+}

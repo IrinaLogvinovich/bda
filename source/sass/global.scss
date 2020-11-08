@@ -19,7 +19,12 @@ body {
   min-height: 100vh;
   margin: 0;
   font-weight: normal;
-  background: $background;
+  color: $text;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $font;
+  font-weight: 300;
+  // letter-spacing: -0.15px;
 }
 
 .page-body--overflow {
