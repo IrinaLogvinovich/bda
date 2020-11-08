@@ -13,4 +13,13 @@
     width: 100%;
     max-width: 345px;
     min-height: 60px;
+
+    &--small {
+        min-height: 50px;
+    }
+
+    &--light {
+        background-color: white;
+        color: $button;
+    }
 }

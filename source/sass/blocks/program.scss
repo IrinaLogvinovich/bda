@@ -2,23 +2,54 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 160px;
 
     &__title {
         width: 100%;
+        margin-bottom: 23px;
     }
 
     &__list {
         width: 49%;
         @include list-reset;
+
+        & li {
+            border-radius: 4px;
+            background: $partners-list;
+            margin-bottom: 14px;
+        }
         
         & a {
             width: 100%;
             display: flex;
             align-items: center;
+            padding: 18px 25px 18px 27px;
+            text-decoration: none;
 
             & img {
                 margin-left: auto;
             }
         }
+
+        & div {
+            display: none;
+            padding: 20px 27px 30px 27px;
+
+            & p {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+            & p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__button-block {
+        margin-top: 46px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
