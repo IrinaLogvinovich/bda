@@ -1,5 +1,7 @@
 .about {
     padding-bottom: 128px;
+    padding-top: 116px;
+
     &__top-row {
         display: flex;
         justify-content: space-between;
@@ -37,6 +39,17 @@
         height: 305px;
         margin-bottom: 33px;
         position: relative;
+        transition: opacity 0.4s ease;
+        
+        &:hover {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
+
+        &:focus {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
     }
 
     &__content {

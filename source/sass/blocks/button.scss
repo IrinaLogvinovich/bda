@@ -13,6 +13,17 @@
     width: 100%;
     max-width: 345px;
     min-height: 60px;
+    transition: opacity 0.4s ease;
+        
+    &:hover {
+        transition: opacity 0.4s ease;
+        opacity:0.8;
+    }
+
+    &:focus {
+        transition: opacity 0.4s ease;
+        opacity:0.8;
+    }
 
     &--small {
         min-height: 50px;
@@ -21,5 +32,12 @@
     &--light {
         background-color: white;
         color: $button;
+    }
+
+    &--search {
+        min-height: 50px;
+        background-image: url('../img/sprite/search.svg');
+        background-repeat: no-repeat;
+        background-position: 20px center;
     }
 }

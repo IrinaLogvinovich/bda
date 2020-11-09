@@ -1,0 +1,36 @@
+.cookie {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 588px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    background: $partners-list;
+    padding: 45px 63px 24px 63px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    z-index: 5;
+
+    & .button {
+        align-self: center;
+    }
+
+    &__close {
+        top: 24px;
+        right: 24px;
+        position: absolute;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        box-shadow: none;
+        outline: none;
+    }
+
+    & p {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+}

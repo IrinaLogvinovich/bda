@@ -25,6 +25,17 @@
             align-items: center;
             padding: 18px 25px 18px 27px;
             text-decoration: none;
+            transition: opacity 0.4s ease;
+        
+            &:hover {
+                transition: opacity 0.4s ease;
+                opacity:0.8;
+            }
+
+            &:focus {
+                transition: opacity 0.4s ease;
+                opacity:0.8;
+            }
 
             & img {
                 margin-left: auto;

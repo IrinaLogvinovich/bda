@@ -4,14 +4,115 @@
   <meta charset="UTF-8">
   <title>Портал инклюзивное образование</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=1236">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
   <body>
     <header class="header">
- 
+    <div class="header__container container">
+        <div class="header__font">
+            <span class="header__block-title">Шрифт</span>
+            <div class="header__font-values">
+                <button type="button" class="header__font-value header__font-value--small">
+                    <img src="img/sprite/font-1.svg" alt="малнький шрифт">
+                </button>
+                <button type="button" class="header__font-value header__font-value--middle  header__active">
+                    <img src="img/sprite/font-2.svg" alt="средний шрифт">
+                </button>
+                <button type="button" class="header__font-value header__font-value--large">
+                    <img src="img/sprite/font-3.svg" alt="крупный шрифт">
+                </button>
+            </div>
+        </div>
+
+        <div class="header__line-height">
+            <span class="header__block-title">Интервал</span>
+            <div class="header__line-height-values">
+                <button type="button" class="header__line-height-value header__line-height-value--small">
+                    <img src="img/sprite/lh-1.svg" alt="малнький интервал">
+                </button>
+                <button type="button" class="header__line-height-value header__line-height-value--middle header__active">
+                    <img src="img/sprite/lh-2.svg" alt="средний интервал">
+                </button>
+                <button type="button" class="header__line-height-value header__line-height-value--large">
+                    <img src="img/sprite/lh-3.svg" alt="крупный интервал">
+                </button>
+            </div>
+        </div>
+
+        <div class="header__color">
+            <span class="header__block-title">Цвет</span>
+            <div class="header__color-values">
+                <button type="button" class="header__color-value header__color-value--small header__active">
+                    <img src="img/sprite/color-1.svg" alt="палитра">
+                </button>
+                <button type="button" class="header__color-value header__color-value--middle">
+                    <img src="img/sprite/color-2.svg" alt="палитра">
+                </button>
+                <button type="button" class="header__color-value header__color-value--large">
+                    <img src="img/sprite/color-3.svg" alt="палитра">
+                </button>
+            </div>
+        </div>
+
+        <div class="header__volume">
+            <span class="header__block-title">Громкость</span>
+            <div class="header__volume-values">
+                <button type="button" class="header__volume-value header__volume-value--small header__active">
+                    <img src="img/sprite/volume-1.svg" alt="малая громкость">
+                </button>
+                <button type="button" class="header__volume-value header__volume-value--middle">
+                    <img src="img/sprite/volume-2.svg" alt="громко">
+                </button>
+            </div>
+        </div>
+
+        <div class="header__lang">
+            <span class="header__block-title">Язык</span>
+            <div class="header__lang-values">
+                <button type="button" class="header__lang-value header__lang-value--small header__active">RU</button>
+                <button type="button" class="header__lang-value header__lang-value--middle">BASH</button>
+            </div>
+        </div>
+
+        <a href="#" class="header__search">
+             <span class="header__block-title">Поиск</span>
+            <img src="img/sprite/search.svg" alt="иконка лупы">
+        </a>
+        <ul class="header__social social">
+            <li>
+                <a href="#">
+                    <img src="img/sprite/ok.svg" alt="Одноклассники">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/sprite/fb.svg" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/sprite/insta.svg" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/sprite/vk.svg" alt="ВКонтакте">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header__search-block search search--header" style="display: none">
+        <form action="#" method="post">
+            <label for="header-search">Введите текст для поиска:</label>
+            <input type="text" id="header-search" name="search">
+        </form>
+        <button class="search__close">
+            <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+        </button>
+    </div>
 </header>
 
     <main class="container">
@@ -25,13 +126,13 @@
         </div>
         <div class="about__bottom">
           <div class="about__video-block">
-            <a href="#" class="about__video">
+            <a href="img/video-image.jpg" class="about__video" data-fancybox="video">
               <span class="about__video-title">Видео презентация – портала</span>
               <img class="about__play-icon" src="img/sprite/play.svg" alt="кнопка play">
               <img lass="about__video-cover" src="img/video-image.jpg" alt="постер видео">
             </a>
 
-            <a href="#" class="about__video">
+            <a href="img/video-image.jpg" class="about__video" data-fancybox="video">
               <span class="about__video-title">Видео презентация мобильного приложения</span>
               <img class="about__play-icon" src="img/sprite/play.svg" alt="кнопка play">
               <img class="about__video-cover" src="img/video-image.jpg" alt="постер видео">
@@ -90,12 +191,6 @@
           <p>Мы будем рады Вашим обращениям.</p>
           <p>Пожалуйста, направьте нам свое обращение по адресу электронной почты или воспользуйтесь электронной формой направления писем.</p>
           <p class="feedback__mail">E-mail: <a href="mailto:fondnko@bk.ru">fondnko@bk.ru</a></p>
-          <!-- <div class="feedback__volunteers">
-            <h2 class="feedback__title title">Волонтеры проекта</h2>
-            <p>Количество добровольцев (волонтеров), привлеченных к реализации проекта – 30</p> 
-            <h3 class="feedback__subtitle">Стать добровольцем:</h3> 
-            <p>Уважаемый пользователь портала, если Вы хотите стать добровольцем нашего проекта, пожалуйста, заполните Согласие на обработку персональных данных и направьте его нам на почту, или воспользуйтесь функцией Обратная связь.</p>
-          </div> -->
         </div>
         <form action="#" class="feedback__form">
           <div class="feedback__top">
@@ -316,6 +411,167 @@
           </div>
         </form>
       </section>
+      <section class="statistic">
+        <h2 class="statistic__title title">Статистика</h2>
+        <div class="statistic__months swiper-container">
+          <div class="statistic__months-wrapper swiper-wrapper">
+            <div class="statistic__month swiper-slide">
+              <p>Январь</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Февраль</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Март</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Апрель</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Май</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Июнь</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Июль</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Август</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Сентябрь</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Октябрь</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Ноябрь</p>
+            </div>
+            <div class="statistic__month swiper-slide">
+              <p>Декабрь</p>
+            </div>
+          </div>
+        </div>
+        <div class="statistic__result">
+          <div class="statistic__slider swiper-container">
+            <div class="statistic__navigation">
+              <img class="statistic__prev" src="img/sprite/prev.svg" alt="предыдущий слайд">
+              <img class="statistic__next" src="img/sprite/next.svg" alt="следующий слайд">
+            </div>
+            <div class="statistic__wrapper swiper-wrapper">
+              <div class="statistic__slide swiper-slide" data-year="2020">
+                <p class="statistic__year">2020 год</p>
+                <div class="statistic__info">
+                  <ul>
+                    <li>
+                      <span>Хостов:</span>
+                      <span>000</span>
+                    </li>
+                    <li>
+                      <span>Сессий:</span>
+                      <span>000</span>
+                    </li>
+                    <li>
+                      <span>Хитов:</span>
+                      <span>000</span>
+                    </li>
+                    <li>
+                      <span>Посетителей:</span>
+                      <span>000</span>
+                    </li>
+                    <li>
+                      <span>Новых посетителей:</span>
+                      <span>000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="statistic__slide swiper-slide" data-year="2019">
+                <p class="statistic__year">2019 год</p>
+                <div class="statistic__info">
+                  <ul>
+                    <li>
+                      <span>Хостов:</span>
+                      <span>001</span>
+                    </li>
+                    <li>
+                      <span>Сессий:</span>
+                      <span>001</span>
+                    </li>
+                    <li>
+                      <span>Хитов:</span>
+                      <span>001</span>
+                    </li>
+                    <li>
+                      <span>Посетителей:</span>
+                      <span>001</span>
+                    </li>
+                    <li>
+                      <span>Новых посетителей:</span>
+                      <span>001</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="statistic__slide swiper-slide" data-year="2018">
+                <p class="statistic__year">2018 год</p>
+                <div class="statistic__info">
+                  <ul>
+                    <li>
+                      <span>Хостов:</span>
+                      <span>002</span>
+                    </li>
+                    <li>
+                      <span>Сессий:</span>
+                      <span>002</span>
+                    </li>
+                    <li>
+                      <span>Хитов:</span>
+                      <span>002</span>
+                    </li>
+                    <li>
+                      <span>Посетителей:</span>
+                      <span>002</span>
+                    </li>
+                    <li>
+                      <span>Новых посетителей:</span>
+                      <span>002</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="statistic__slide swiper-slide" data-year="2017">
+                <p class="statistic__year">2017 год</p>
+                <div class="statistic__info">
+                  <ul>
+                    <li>
+                      <span>Хостов:</span>
+                      <span>004</span>
+                    </li>
+                    <li>
+                      <span>Сессий:</span>
+                      <span>004</span>
+                    </li>
+                    <li>
+                      <span>Хитов:</span>
+                      <span>004</span>
+                    </li>
+                    <li>
+                      <span>Посетителей:</span>
+                      <span>004</span>
+                    </li>
+                    <li>
+                      <span>Новых посетителей:</span>
+                      <span>004</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
     <div class="footer__container container">
@@ -332,7 +588,7 @@
                 </li>
             </ul>
             <div class="footer__social-block">
-                <a href="#" class="button">Поиск</a>
+                <a href="#" class="button button--search">Поиск</a>
                 <ul class="footer__social social">
                     <li>
                         <a href="#">
@@ -368,8 +624,25 @@
                 <span>Разработан по лицензии ® Uniprolings</span> 
             </p>
         </div>
+        <div class="footer__search-block search search--footer" style="display: none">
+            <form action="#" method="post">
+                <label for="footer-search">Введите текст для поиска:</label>
+                <input type="text" id="footer-search" name="search">
+            </form>
+            <button class="search__close">
+                <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+            </button>
+        </div>
     </div>
+   
 </footer>
+<div class="cookie" style="display: none">
+    <button class="cookie__close">
+        <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+    </button>
+    <p>Используя данный портал, вы соглашаетесь с тем, что портал может использовать файлы «cookie» для хранения ваших учетных данных, а также с целью сбора статистики для оптимизации работы сайта и предоставления маркетинговых материалов с учетом ваших интересов.</p>
+    <a href="#" class="button js-cookie">Соглашаюсь</a>
+</div>
 
     <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

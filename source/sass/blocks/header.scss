@@ -1,0 +1,123 @@
+.header{
+    min-height: 70px;
+    background-color: $button;
+    padding: 14px 0;
+    color: $light;
+    position: relative;
+
+    * {
+        outline: none;
+    }
+
+    &__container {
+        display: flex;
+
+        & button {
+            background-color: transparent;
+            padding: 0;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: $light;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            transition: opacity 0.4s ease;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+
+            &:active {
+                border-color: $light;
+                border-radius: 4px;
+            }
+
+            &:hover {
+                transition: opacity 0.4s ease;
+                opacity:0.8;
+            }
+
+            &:focus {
+                transition: opacity 0.4s ease;
+                opacity:0.8;
+            }
+        }
+
+        & button.header__lang-value--middle {
+            width: 56px;
+        }
+
+        & button.header__active {
+            font-weight: 500;
+            border-color: $light;
+            border-radius: 4px;
+        }
+    }
+
+    &__font {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    &__line-height {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    &__color {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    &__volume {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    &__lang {
+        display: flex;
+        align-items: center;
+        margin-right: 28px;
+    }
+
+    &__block-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 8px;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: opacity 0.4s ease;
+        
+        &:hover {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
+
+        &:focus {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
+    }
+
+    & .social li:not(:last-child){
+        margin-right: 8px;
+    }
+
+    &__social {
+        margin-left: auto;
+        padding-right: 10px;
+    }
+}

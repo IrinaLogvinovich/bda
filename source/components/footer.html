@@ -13,7 +13,7 @@
                 </li>
             </ul>
             <div class="footer__social-block">
-                <a href="#" class="button">Поиск</a>
+                <a href="#" class="button button--search">Поиск</a>
                 <ul class="footer__social social">
                     <li>
                         <a href="#">
@@ -49,5 +49,22 @@
                 <span>Разработан по лицензии ® Uniprolings</span> 
             </p>
         </div>
+        <div class="footer__search-block search search--footer" style="display: none">
+            <form action="#" method="post">
+                <label for = 'footer-search'>Введите текст для поиска:</label>
+                <input type="text" id="footer-search" name="search">
+            </form>
+            <button class="search__close">
+                <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+            </button>
+        </div>
     </div>
+   
 </footer>
+<div class="cookie" style="display: none">
+    <button class="cookie__close">
+        <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+    </button>
+    <p>Используя данный портал, вы соглашаетесь с тем, что портал может использовать файлы «cookie» для хранения ваших учетных данных, а также с целью сбора статистики для оптимизации работы сайта и предоставления маркетинговых материалов с учетом ваших интересов.</p>
+    <a href="#" class="button js-cookie">Соглашаюсь</a>
+</div>

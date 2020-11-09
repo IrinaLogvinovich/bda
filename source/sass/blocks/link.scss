@@ -2,6 +2,17 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    transition: opacity 0.4s ease;
+        
+    &:hover {
+        transition: opacity 0.4s ease;
+        opacity:0.8;
+    }
+
+    &:focus {
+        transition: opacity 0.4s ease;
+        opacity:0.8;
+    }
 
     &__image-block {
         background: linear-gradient(135deg, #0AA39D 0%, #2FDBAF 100%);

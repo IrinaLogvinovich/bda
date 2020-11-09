@@ -4,23 +4,39 @@
     color: $light;
     background-color: $text;
 
+
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        position: relative;
     }
 
     &__right-side {
         width: 50%;
-        padding-left: 125px;
+        padding-left: 130px;
     }
 
     &__logo {
-        margin-bottom: 62px;
+        display: block;
+        margin-bottom: 60px;
+        transition: opacity 0.4s ease;
+        
+        &:hover {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
+
+        &:focus {
+            transition: opacity 0.4s ease;
+            opacity:0.8;
+        }
     }
 
     &__info {
         margin: 0;
+        font-size: 14px;
+        line-height: 16px;
 
         & span {
             display: block;
@@ -30,7 +46,7 @@
     &__left-side {
         width: 50%;
 
-        & ul {
+        & ul:not(.social) {
             @include list-reset;
             display: flex;
             flex-direction: column;
@@ -42,12 +58,32 @@
             & a {
                 text-decoration: none;
                 line-height: 22px;
+                transition: opacity 0.4s ease;
+        
+                &:hover {
+                    transition: opacity 0.4s ease;
+                    opacity:0.8;
+                }
+
+                &:focus {
+                    transition: opacity 0.4s ease;
+                    opacity:0.8;
+                }
             }
         }
     }
 
     &__social-block {
+        padding-top: 35px;
         display: flex;
         align-items: flex-end;;
+    }
+
+    &__social {
+        margin-left: 140px;
+    }
+
+    &__search-block {
+        top: 300px;
     }
 }
