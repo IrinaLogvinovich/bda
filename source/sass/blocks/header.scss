@@ -3,7 +3,6 @@
     background-color: $button;
     padding: 14px 0;
     color: $light;
-    position: relative;
 
     * {
         outline: none;
@@ -11,82 +10,98 @@
 
     &__container {
         display: flex;
+        align-items: center;
+        min-height: 36px;
+        position: relative;
 
-        & button {
-            background-color: transparent;
-            padding: 0;
-            border: 1px solid transparent;
-            box-shadow: none;
-            color: $light;
+        // & button {
+        //     background-color: transparent;
+        //     padding: 0;
+        //     border: 1px solid transparent;
+        //     box-shadow: none;
+        //     color: $light;
+        //     width: 36px;
+        //     height: 36px;
+        //     cursor: pointer;
+        //     font-weight: 300;
+        //     font-size: 14px;
+        //     line-height: 16px;
+        //     transition: opacity 0.4s ease;
+
+        //     & img {
+        //         width: 100%;
+        //         height: auto;
+        //     }
+
+        //     &:active {
+        //         border-color: $light;
+        //         border-radius: 4px;
+        //     }
+
+        //     &:hover {
+        //         transition: opacity 0.4s ease;
+        //         opacity:0.8;
+        //     }
+
+        //     &:focus {
+        //         transition: opacity 0.4s ease;
+        //         opacity:0.8;
+        //     }
+        // }
+
+        // & button.header__lang-value--middle {
+        //     width: 56px;
+        // }
+
+        // & button.header__active {
+        //     font-weight: 500;
+        //     border-color: $light;
+        //     border-radius: 4px;
+        // }
+
+        .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
             width: 36px;
             height: 36px;
-            cursor: pointer;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 16px;
-            transition: opacity 0.4s ease;
-
-            & img {
-                width: 100%;
-                height: auto;
-            }
-
-            &:active {
-                border-color: $light;
-                border-radius: 4px;
-            }
-
-            &:hover {
-                transition: opacity 0.4s ease;
-                opacity:0.8;
-            }
-
-            &:focus {
-                transition: opacity 0.4s ease;
-                opacity:0.8;
-            }
         }
 
-        & button.header__lang-value--middle {
-            width: 56px;
+        .ya-share2__container_shape_round.ya-share2__container_size_m .ya-share2__badge .ya-share2__icon:not(.ya-share2__icon_messenger-contact):not(.ya-share2__icon_more):not(.ya-share2__icon_copy) {
+            background-size: 36px 36px;
         }
 
-        & button.header__active {
-            font-weight: 500;
-            border-color: $light;
-            border-radius: 4px;
+        .ya-share2__list.ya-share2__list_direction_horizontal > .ya-share2__item {
+            margin-left: 14px;
         }
     }
 
-    &__font {
-        display: flex;
-        align-items: center;
-        margin-right: 24px;
-    }
+    // &__font {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-right: 24px;
+    // }
 
-    &__line-height {
-        display: flex;
-        align-items: center;
-        margin-right: 24px;
-    }
+    // &__line-height {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-right: 24px;
+    // }
 
-    &__color {
-        display: flex;
-        align-items: center;
-        margin-right: 24px;
-    }
+    // &__color {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-right: 24px;
+    // }
 
-    &__volume {
-        display: flex;
-        align-items: center;
-        margin-right: 24px;
-    }
+    // &__volume {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-right: 24px;
+    // }
 
-    &__lang {
-        display: flex;
-        align-items: center;
-        margin-right: 28px;
-    }
+    // &__lang {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-right: 28px;
+    // }
 
     &__block-title {
         font-weight: 500;
@@ -100,6 +115,8 @@
         align-items: center;
         text-decoration: none;
         transition: opacity 0.4s ease;
+        margin-right: 48px;
+        margin-left: auto;
         
         &:hover {
             transition: opacity 0.4s ease;
@@ -112,12 +129,32 @@
         }
     }
 
-    & .social li:not(:last-child){
-        margin-right: 8px;
-    }
+    // & .social li:not(:last-child){
+    //     margin-right: 8px;
+    // }
 
-    &__social {
-        margin-left: auto;
-        padding-right: 10px;
+    // &__social {
+    //     margin-left: auto;
+    //     padding-right: 10px;
+    // }
+
+    &__plugin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        min-height: 42px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $button;
+        background-color: $light;
+        border-radius: 4px;
+
+        & img {
+            margin-left: 10px;
+            
+        }
     }
 }

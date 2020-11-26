@@ -12,107 +12,23 @@
   <body>
     <header class="header">
     <div class="header__container container">
-        <div class="header__font">
-            <span class="header__block-title">Шрифт</span>
-            <div class="header__font-values">
-                <button type="button" class="header__font-value header__font-value--small">
-                    <img src="img/sprite/font-1.svg" alt="малнький шрифт">
-                </button>
-                <button type="button" class="header__font-value header__font-value--middle  header__active">
-                    <img src="img/sprite/font-2.svg" alt="средний шрифт">
-                </button>
-                <button type="button" class="header__font-value header__font-value--large">
-                    <img src="img/sprite/font-3.svg" alt="крупный шрифт">
-                </button>
-            </div>
-        </div>
-
-        <div class="header__line-height">
-            <span class="header__block-title">Интервал</span>
-            <div class="header__line-height-values">
-                <button type="button" class="header__line-height-value header__line-height-value--small">
-                    <img src="img/sprite/lh-1.svg" alt="малнький интервал">
-                </button>
-                <button type="button" class="header__line-height-value header__line-height-value--middle header__active">
-                    <img src="img/sprite/lh-2.svg" alt="средний интервал">
-                </button>
-                <button type="button" class="header__line-height-value header__line-height-value--large">
-                    <img src="img/sprite/lh-3.svg" alt="крупный интервал">
-                </button>
-            </div>
-        </div>
-
-        <div class="header__color">
-            <span class="header__block-title">Цвет</span>
-            <div class="header__color-values">
-                <button type="button" class="header__color-value header__color-value--small header__active">
-                    <img src="img/sprite/color-1.svg" alt="палитра">
-                </button>
-                <button type="button" class="header__color-value header__color-value--middle">
-                    <img src="img/sprite/color-2.svg" alt="палитра">
-                </button>
-                <button type="button" class="header__color-value header__color-value--large">
-                    <img src="img/sprite/color-3.svg" alt="палитра">
-                </button>
-            </div>
-        </div>
-
-        <div class="header__volume">
-            <span class="header__block-title">Громкость</span>
-            <div class="header__volume-values">
-                <button type="button" class="header__volume-value header__volume-value--small header__active">
-                    <img src="img/sprite/volume-1.svg" alt="малая громкость">
-                </button>
-                <button type="button" class="header__volume-value header__volume-value--middle">
-                    <img src="img/sprite/volume-2.svg" alt="громко">
-                </button>
-            </div>
-        </div>
-
-        <div class="header__lang">
-            <span class="header__block-title">Язык</span>
-            <div class="header__lang-values">
-                <button type="button" class="header__lang-value header__lang-value--small header__active">RU</button>
-                <button type="button" class="header__lang-value header__lang-value--middle">BASH</button>
-            </div>
-        </div>
-
+        <a href="#" class="header__plugin bvi-open">Версия для слабовидящих <img src="img/sprite/eye.svg" alt="глаз"></a>
         <a href="#" class="header__search">
              <span class="header__block-title">Поиск</span>
             <img src="img/sprite/search.svg" alt="иконка лупы">
         </a>
-        <ul class="header__social social">
-            <li>
-                <a href="#">
-                    <img src="img/sprite/ok.svg" alt="Одноклассники">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/sprite/fb.svg" alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/sprite/insta.svg" alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/sprite/vk.svg" alt="ВКонтакте">
-                </a>
-            </li>
-        </ul>
+        <div class="ya-share2" data-curtain="" data-shape="round" data-services="vkontakte,facebook,odnoklassniki"></div>
+        <div class="header__search-block search search--header" style="display: none">
+            <form action="#" method="post">
+                <label for="header-search">Введите текст для поиска:</label>
+                <input type="text" id="header-search" name="search">
+            </form>
+            <button class="search__close">
+                <img src="img/sprite/cross.svg" alt="кнопка закрыть">
+            </button>
+        </div>
     </div>
-    <div class="header__search-block search search--header" style="display: none">
-        <form action="#" method="post">
-            <label for="header-search">Введите текст для поиска:</label>
-            <input type="text" id="header-search" name="search">
-        </form>
-        <button class="search__close">
-            <img src="img/sprite/cross.svg" alt="кнопка закрыть">
-        </button>
-    </div>
+
 </header>
 
     <main class="container">
@@ -646,6 +562,7 @@
 
     <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 
 
   </body>

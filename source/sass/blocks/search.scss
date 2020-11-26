@@ -8,8 +8,8 @@
     border-radius: 4px;
 
     &--header {
-        top: calc(100% + 12px);
-        right: 100px;
+        top: calc(100% + 40px);
+        right: 80px;
     }
 
     &--footer {
@@ -55,5 +55,7 @@
         cursor: pointer;
         box-shadow: none;
         outline: none;
+        width: 15px !important;
+        height: 15px !important;
     }
 }

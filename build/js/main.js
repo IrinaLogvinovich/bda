@@ -126,6 +126,11 @@ $(function(){
       months.on('slideChange', function () {
         updateData();
       });
+
+      $('.statistic__month').on('click', function(evt){
+        months.slideTo(months.clickedIndex);
+        updateData();
+      });
 });
 $(function(){
 
